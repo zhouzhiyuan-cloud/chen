@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迪士尼网站</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="container cl">
+            <div class="left fl">
+                <a href="index.html" class="logo fl"><img src="images/disney_logo.png" alt=""></a>
+
+                <!-- 导航栏 -->
+                <ul class="menu fl">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">资讯</a></li>
+                    <li><a href="video.html" class="active">影视</a></li>
+                    <li><a href="shop.html">shopDisney</a></li>
+                    <li><a href="person.html">角色介绍</a></li>
+                </ul>
+            </div>
+            <div class="right fr">
+                <ul>
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="register.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 大图轮播图 -->
+    <div class="banner">
+        <div class="container">
+            <div class="swiper bannerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/banner1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/banner2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/banner3.jpg" alt=""></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 迪士尼影视 -->
+    <div class="video videoInpage commPadding" style="background: none;">
+        <div class="container">
+            <div class="commTitle">迪士尼影视</div>
+            <ul class="cl">
+                <li>
+                    <a href="#">
+                        <div class="img"><img src="images/video1.jpg" alt=""></div>
+                        <h3>阿凡达：水之道</h3>
+                        <p>传奇归来！《阿凡达：水之道》首支预告震撼发布，带你前往潘多拉星球全新“水世界”</p>
+                        <i>了解更多</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img"><img src="images/video2.jpg" alt=""></div>
+                        <h3>阿凡达：水之道</h3>
+                        <p>传奇归来！《阿凡达：水之道》首支预告震撼发布，带你前往潘多拉星球全新“水世界”</p>
+                        <i>了解更多</i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="img"><img src="images/video3.webp" alt=""></div>
+                        <h3>疯狂动物城</h3>
+                        <p>所有动物和平共处的动物城市，兔子朱迪通过自己努力奋斗完成自己儿时的梦想，成为动物警察的故事</p>
+                        <i>了解更多</i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="img"><img src="images/video4.jpg" alt=""></div>
+                        <h3>寻梦环游记</h3>
+                        <p>热爱音乐的小男孩，米格和落魄歌手埃克托开启了一段奇妙又冒险的旅程故事</p>
+                        <i>了解更多</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="foot-logo">
+            <img src="images/disney_logo.png" alt="">
+        </div>
+        <div class="foot-menu">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">法律条款</a></li>
+                <li><a href="#">隐私政策</a></li>
+            </ul>
+        </div>
+        <div class="foot-wx">
+            <img src="images/disney_wx.jpg" alt="">
+            <p>关注迪士尼（中国）微信</p>
+        </div>
+        <div class="statment">
+            <p>© Disney , All Rights Reserved, Disney Entertainment 备案号：<a href="#">沪ICP备07025394号-17</a></p>
+        </div>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        // 大图轮播图
+        var bannerSwiper = new Swiper(".bannerSwiper", {
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+        });
+    </script>
+
+</body>
+
+</html>
